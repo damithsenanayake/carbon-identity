@@ -26,9 +26,45 @@
         <parameter name="ServiceClass" locked="false">
             org.wso2.carbon.identity.user.profile.mgt.UserProfileAdmin
         </parameter>
+        <operation name="isReadOnlyUserStore">
+            <AuthorizationAction>permission/admin/manage/identity/user-profile/read</AuthorizationAction>
+        </operation>
+        <operation name="deleteUserProfile">
+            <AuthorizationAction>permission/admin/manage/identity/user-profile/delete</AuthorizationAction>
+        </operation>
+        <operation name="setUserProfile">
+            <AuthorizationAction>permission/admin/manage/identity/user-profile/update</AuthorizationAction>
+        </operation>
+        <operation name="getUserProfile">
+            <AuthorizationAction>permission/admin/manage/identity/user-profile/read</AuthorizationAction>
+        </operation>
+        <operation name="getUserProfiles">
+            <AuthorizationAction>permission/admin/manage/identity/user-profile/read</AuthorizationAction>
+        </operation>
+        <operation name="getAssociatedIDs">
+            <AuthorizationAction>permission/admin/manage/identity/user-profile/read</AuthorizationAction>
+        </operation>
+        <operation name="getNameAssociatedWith">
+            <AuthorizationAction>permission/admin/manage/identity/user-profile/read</AuthorizationAction>
+        </operation>
+        <operation name="getProfileFieldsForInternalStore">
+            <AuthorizationAction>permission/admin/manage/identity/user-profile/read</AuthorizationAction>
+        </operation>
+        <operation name="isAddProfileEnabled">
+            <AuthorizationAction>permission/admin/manage/identity/user-profile/read</AuthorizationAction>
+        </operation>
+        <operation name="isAddProfileEnabledForDomain">
+            <AuthorizationAction>permission/admin/manage/identity/user-profile/read</AuthorizationAction>
+        </operation>
+        <operation name="associateID">
+            <AuthorizationAction>permission/admin/manage/identity/user-profile/update</AuthorizationAction>
+        </operation>
+        <operation name="removeAssociateID">
+            <AuthorizationAction>permission/admin/manage/identity/user-profile/update</AuthorizationAction>
+        </operation>
     </service>
 
-    <parameter name="AuthorizationAction" locked="true">/permission/admin/login</parameter> 
+    <parameter name="AuthorizationAction" locked="true">/permission/admin/login</parameter>
     <parameter name="adminService" locked="true">true</parameter>
     <parameter name="hiddenService" locked="true">true</parameter>
 </serviceGroup>
