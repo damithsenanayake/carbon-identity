@@ -25,30 +25,30 @@
             org.wso2.carbon.directory.server.manager.DirectoryServerManager
         </parameter>
         <operation name="listServicePrinciples">
-            <parameter name="AuthorizationAction" locked="true">/permission/admin/identity/directory-server-mgt/view</parameter>
+            <parameter name="AuthorizationAction" locked="true">/permission/admin/manage/identity/directory-server-mgt/view</parameter>
         </operation>
         <operation name="addServer">
-            <parameter name="AuthorizationAction" locked="true">/permission/admin/identity/directory-server-mgt/create</parameter>
+            <parameter name="AuthorizationAction" locked="true">/permission/admin/manage/identity/directory-server-mgt/create</parameter>
         </operation>
         <operation name="removeServer">
-            <parameter name="AuthorizationAction" locked="true">/permission/admin/identity/directory-server-mgt/delete</parameter>
+            <parameter name="AuthorizationAction" locked="true">/permission/admin/manage/identity/directory-server-mgt/delete</parameter>
         </operation>
         <operation name="changePassword">
-            <parameter name="AuthorizationAction" locked="true">/permission/admin/identity/directory-server-mgt/update</parameter>
+            <parameter name="AuthorizationAction" locked="true">/permission/admin/manage/identity/directory-server-mgt/update</parameter>
         </operation>
        <operation name="isExistingServicePrinciple">
-            <parameter name="AuthorizationAction" locked="true">/permission/admin/identity/directory-server-mgt/view</parameter>
+            <parameter name="AuthorizationAction" locked="true">/permission/admin/manage/identity/directory-server-mgt/view</parameter>
         </operation>
        <operation name="getPasswordConformanceRegularExpression">
-            <parameter name="AuthorizationAction" locked="true">/permission/admin/identity/directory-server-mgt/view</parameter>
+            <parameter name="AuthorizationAction" locked="true">/permission/admin/manage/identity/directory-server-mgt/view</parameter>
        </operation>
        <operation name="getServiceNameConformanceRegularExpression">
-            <parameter name="AuthorizationAction" locked="true">/permission/admin/identity/directory-server-mgt/view</parameter>
+            <parameter name="AuthorizationAction" locked="true">/permission/admin/manage/identity/directory-server-mgt/view</parameter>
        </operation>
        <operation name="isKDCEnabled">
-            <parameter name="AuthorizationAction" locked="true">/permission/admin/identity/directory-server-mgt/view</parameter>
+            <parameter name="AuthorizationAction" locked="true">/permission/admin/manage/identity/directory-server-mgt/view</parameter>
        </operation>
-       <parameter name="AuthorizationAction" locked="false">/permission/admin/identity/directory-server-mgt/view</parameter>
+       <parameter name="AuthorizationAction" locked="false">/permission/admin/manage/identity/directory-server-mgt/view</parameter>
     </service>
     
     <parameter name="adminService" locked="true">true</parameter>
