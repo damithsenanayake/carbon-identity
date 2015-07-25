@@ -43,4 +43,26 @@
 		    <require-permission>/permission/admin/configure/security</require-permission>
         </menu>
     </menus>
+    <ManagementPermissions>
+        <ManagementPermission>
+            <DisplayName>Directory Server Manager</DisplayName>
+            <ResourceId>/permission/admin/manage/identity/directory-server-mgt</ResourceId>
+        </ManagementPermission>
+        <ManagementPermission>
+            <DisplayName>View</DisplayName>
+            <ResourceId>/permission/admin/manage/identity/directory-server-mgt/view</ResourceId>
+        </ManagementPermission>
+        <ManagementPermission>
+            <DisplayName>Create</DisplayName>
+            <ResourceId>/permission/admin/manage/identity/directory-server-mgt/create</ResourceId>
+        </ManagementPermission>
+        <ManagementPermission>
+            <DisplayName>Update</DisplayName>
+            <ResourceId>/permission/admin/manage/identity/directory-server-mgt/update</ResourceId>
+        </ManagementPermission>
+        <ManagementPermission>
+            <DisplayName>Delete</DisplayName>
+            <ResourceId>/permission/admin/manage/identity/directory-server-mgt/delete</ResourceId>
+        </ManagementPermission>
+    </ManagementPermissions>
 </component>
