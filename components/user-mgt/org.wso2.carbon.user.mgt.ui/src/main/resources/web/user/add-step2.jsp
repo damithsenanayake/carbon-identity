@@ -36,6 +36,7 @@
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.Map" %>
 <%@ page import="java.util.ResourceBundle" %>
+<%@ page import="org.wso2.carbon.user.core.UserCoreConstants" %>
 
 
 <script type="text/javascript" src="../userstore/extensions/js/vui.js"></script>
@@ -324,7 +325,8 @@
                                                         if (name.getItemName()
                                                                 .equals(CarbonConstants.REGISTRY_ANONNYMOUS_ROLE_NAME) ||
                                                                 (!currentUser.equals(userRealmInfo.getAdminUser()) && name
-                                                                        .getItemName().equals(userRealmInfo.getAdminRole()))) {
+                                                                        .getItemName().split(UserCoreConstants.DOMAIN_SEPARATOR)[1]
+                                                                        .equals(userRealmInfo.getAdminRole()))) {
                                                             continue;
                                                         } else if (userRealmInfo.getEveryOneRole()
                                                                                 .equals(name.getItemName())) {

@@ -43,6 +43,7 @@
 <%@ page import="org.apache.commons.lang.StringUtils" %>
 <%@ page import="org.apache.commons.collections.CollectionUtils" %>
 <%@ page import="org.wso2.carbon.user.mgt.ui.UserManagementWorkflowServiceClient" %>
+<%@ page import="org.wso2.carbon.user.core.UserCoreConstants" %>
 <script type="text/javascript" src="../userstore/extensions/js/vui.js"></script>
 <script type="text/javascript" src="../admin/js/main.js"></script>
 <script type="text/javascript" src="../identity/validation/js/identity-validate.js"></script>
@@ -432,7 +433,8 @@
                                                 String doEdit = "";
                                                 String doCheck = "";
                                                 if (name.getItemName().equals(CarbonConstants.REGISTRY_ANONNYMOUS_ROLE_NAME)||(!currentUser
-                                                        .equals(userRealmInfo.getAdminUser()) && name.getItemName()
+                                                        .equals(userRealmInfo.getAdminUser()) &&
+                                                        name.getItemName().split(UserCoreConstants.DOMAIN_SEPARATOR)[1]
                                                         .equals(userRealmInfo.getAdminRole()))) {
                                                     continue;
                                                 } else if (!name.getEditable()) {
